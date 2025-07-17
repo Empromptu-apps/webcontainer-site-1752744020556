@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.spinner {
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.drag-over {
+  border-color: #3b82f6 !important;
+  background-color: #eff6ff !important;
+}
+
+.priority-high { color: #dc3545; }
+.priority-medium { color: #ffc107; }
+.priority-low { color: #28a745; }
+.priority-critical { color: #dc3545; font-weight: bold; }
+
+.sentiment-positive { color: #28a745; }
+.sentiment-neutral { color: #6c757d; }
+.sentiment-negative { color: #dc3545; }
+.sentiment-very-negative { color: #dc3545; font-weight: bold; }
+
+.risk-low { color: #28a745; }
+.risk-medium { color: #ffc107; }
+.risk-high { color: #fd7e14; }
+.risk-critical { color: #dc3545; font-weight: bold; }
